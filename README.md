@@ -1,5 +1,5 @@
 # projetopython4
-estudo python
+estudo python calculo de media
 num1 = float(input('Digite o primeira nota: '))
 num2 = float(input('Digite o segunda nota: '))
 media = (num1 + num2) / 2
