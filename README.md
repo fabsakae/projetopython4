@@ -28,3 +28,18 @@ else:
 
 # calculadora de IMC
 
+peso = float(input('Digite seu peso (Kg): '))
+altura = float(input('Digite sua altura (m): '))
+imc = peso / (altura ** 2)
+print('Seu Índice de massa corporal é: {:.1f} ! '.format(imc), end='')
+
+if imc <= 18.5:
+    print('Você está abaixo do peso!')
+elif imc <= 25:
+    print('Você está com seu peso Ideal!')
+elif imc <= 30:
+    print('Você está com Sobrepeso!')
+elif imc <= 40:
+    print('Você está Obeso!')
+else:
+    print('Você está com obesidade Morbida, Procure ajuda médica!')
