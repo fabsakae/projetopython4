@@ -1,5 +1,6 @@
 # projetopython4
-#estudo python calculo de media
+# Cálculo de média
+
 num1 = float(input('Digite o primeira nota: '))
 num2 = float(input('Digite o segunda nota: '))
 media = (num1 + num2) / 2
@@ -11,7 +12,8 @@ elif media < 5:
 else:
     print('Você está APROVADO!')
 
-#Identificador de triangulos
+# Identificador de triângulos
+
 reta1 = float(input('Digite o primeiro segmento da reta: '))
 reta2 = float(input('Digite o segundo segmento da reta: '))
 reta3 = float(input('Digite o terceiro segmento da reta: '))
