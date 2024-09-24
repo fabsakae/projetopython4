@@ -45,3 +45,30 @@
         print('Você está Obeso!')
     else:
         print('Você está com obesidade Morbida, Procure ajuda médica!')
+
+# Calculadora de descontos
+    print('{:=^40}'.format(' LOJAS TKG '))
+    valor = float(input('Total das Compras (R$): '))
+    print('''FORMAS DE PAGAMENTO
+    [ 1 ] à vista/PIX
+    [ 2 ] débito
+    [ 3 ] 2 X cartão
+    [ 4 ] 3 X ou mais no cartão ''')
+    opção = int(input('Qual sua opção? '))
+    if opção == 1:
+        total = valor - (valor * 10 / 100)
+    elif opção == 2:
+        total = valor - (valor * 5 / 100)
+    elif opção == 3:
+        total = valor
+        parcela = total / 2
+        print('Sua compra será parcelada em 2x sem juros de R$ {:.2f}'.format(parcela))
+    elif opção == 4:
+        total = valor + (valor * 20 /100)
+        totalparc = int(input('Quantas parcelas? '))
+        parcela = total / totalparc
+        print('sua compra será parcelada com juros em {}x de R$ {:.2f}'.format(totalparc, parcela))
+    else:
+        total = valor
+        print('Opção inválida. Digite novamente!')
+    print('sua compra de R$ {:.2f} ficará por {:.2f}'.format(valor, total))
