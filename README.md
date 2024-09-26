@@ -72,3 +72,53 @@
         total = valor
         print('Opção inválida. Digite novamente!')
     print('sua compra de R$ {:.2f} ficará por {:.2f}'.format(valor, total))
+# gamer JO KEN PO
+    from random import randint
+    from time import sleep
+    itens = ('PEDRA', 'PAPEL', 'TESOURA')
+    computador = randint(0, 2)
+    print(''' SUA OPÇÕES
+    [ 0 ] PEDRA
+    [ 1 ] PAPEL
+    [ 2 ] TESOURA''')
+    jogador = int(input('Qual é a sua jogada? '))
+    print('\033[1;31mJO\033[m')
+    sleep(1)
+    print('\033[1;31mKEN\033[m')
+    sleep(1)
+    print('\033[1;31mPO!!!\033[m')
+
+    print('\33[1;31;47m-<:>\33[m' * 8)
+    print('O computador jogou {}'.format(itens[computador]))
+    print('O jogador jogou {}'.format(itens[jogador]))
+    print('\33[1;31;47m-<:>\33[m' * 8)
+
+    if computador == 0: # computador jogou pedra
+        if jogador == 0:
+            print('\033[1;33mEMPATE!\033[m')
+        elif jogador == 1:
+            print('\033[1;32mJOGADOR VENCE!\033[m')
+        elif jogador == 2:
+            print('\033[1;32mCOMPUTADOR VENCE!\033[m')
+        else:
+            print('\033[1;31mJOGADA INVÁLIDA\033[m!')
+
+    elif computador == 1: # computador jogou papel
+        if jogador == 0:
+            print('\033[1;32mCOMPUTADOR VENCE!\033[m')
+        elif jogador == 1:
+            print('\033[1;33mEMPATE!\033[m')
+        elif jogador == 2:
+            print('\033[1;32mJOGADOR VENCE!\033[m')
+        else:
+            print('\033[1;31mJOGADA INVÁLIDA!\033[m')
+
+    elif computador ==2: # computador joga tesoura
+        if jogador == 0:
+            print('\033[1;32mJOGADOR VENCE!\033[m')
+        elif jogador == 1:
+            print('\033[1;32mCOMPUTADOR VENCE!\033[m')
+        elif jogador == 2:
+            print('\033[1;33mEMPATE!\033[m')
+        else:
+            print('\033[1;31mJOGADA INVÁLIDA!\033[m')
